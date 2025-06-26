@@ -1,0 +1,29 @@
+.lecturer-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.lecturer-main {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 230px; 
+}
+.logout-button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  margin-top: -2rem;
+}
+
+.lecturer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,21 @@
+                                        List of databases
+          Name          |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+------------------------+----------+----------+-------------+-------------+-----------------------
+ lenox                  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres         +
+                        |          |          |             |             | postgres=CTc/postgres+
+                        |          |          |             |             | students=CTc/postgres+
+                        |          |          |             |             | lenox=CTc/postgres
+ login                  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ newton_project_tracker | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ niims                  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres               | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres         +
+                        |          |          |             |             | postgres=CTc/postgres+
+                        |          |          |             |             | lenox=CTc/postgres
+ template0              | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+                        |          |          |             |             | postgres=CTc/postgres
+ template1              | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+                        |          |          |             |             | postgres=CTc/postgres
+ todo                   | lenox    | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/lenox            +
+                        |          |          |             |             | lenox=CTc/lenox
+(8 rows)
+

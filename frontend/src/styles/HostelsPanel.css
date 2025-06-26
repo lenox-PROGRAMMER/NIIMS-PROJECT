@@ -1,0 +1,145 @@
+/* src/styles/AdminPanel.css */
+
+/* Container wrapper for the panel */
+.admin-panel-wrapper {
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 24px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.admin-panel-wrapper h3 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+/* Section styling */
+.student-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.student-form h4 {
+  flex-basis: 100%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #34495e;
+  margin-bottom: 12px;
+}
+
+/* Select boxes */
+.student-form select {
+  flex: 1 1 200px;
+  padding: 10px 14px;
+  border: 1.8px solid #bdc3c7;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.student-form select:hover,
+.student-form select:focus {
+  border-color: #2980b9;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Assign button */
+.student-form button {
+  flex: 0 0 auto;
+  padding: 12px 28px;
+  background-color: #2980b9;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.student-form button:disabled,
+.student-form button[aria-disabled="true"] {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.student-form button:not(:disabled):hover,
+.student-form button:not(:disabled):focus {
+  background-color: #1f618d;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.4);
+  outline: none;
+}
+
+/* Table styles */
+.hostels-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hostels-table thead {
+  background-color: #2980b9;
+  color: #fff;
+  text-align: left;
+}
+
+.hostels-table th,
+.hostels-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.hostels-table tbody tr:hover {
+  background-color: #f0f7ff;
+  cursor: default;
+}
+
+/* Buttons in table */
+.hostels-table button {
+  padding: 6px 14px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hostels-table button:hover,
+.hostels-table button:focus {
+  background-color: #21618c;
+  outline: none;
+}
+
+/* Accessibility: visually hidden for screen reader labels */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

@@ -1,0 +1,157 @@
+/* Table Basics */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.students-table thead {
+  background-color: #f8f9fa;
+}
+
+.students-table th, .students-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+  color: #495057;
+}
+
+.students-table th {
+  font-weight: 600;
+  color: #212529;
+  letter-spacing: 0.03em;
+}
+
+/* Row Hover */
+.students-table tbody tr:hover {
+  background-color: #f1f3f5;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  padding: 0.35rem 0.7rem;
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e63946;
+}
+
+/* Form & Search Inputs */
+input, select {
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #495057;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #339af0;
+  box-shadow: 0 0 5px rgba(51,154,240,0.5);
+}
+
+/* Messages */
+p {
+  margin: 0.5rem 0 1rem;
+  font-weight: 500;
+}
+
+p[style*="green"] {
+  color: #2b8a3e;
+}
+
+p[style*="crimson"] {
+  color: #c92a2a;
+}
+
+/* Payment Modal */
+.payment-modal {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  max-width: 350px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Modal Buttons */
+.payment-modal button {
+  background-color: #339af0;
+  color: white;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-modal button:hover {
+  background-color: #1c7ed6;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .students-table, .students-table thead, .students-table tbody, .students-table th, .students-table td, .students-table tr {
+    display: block;
+  }
+
+  .students-table thead {
+    display: none;
+  }
+
+  .students-table tbody tr {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem;
+  }
+
+  .students-table tbody td {
+    padding-left: 50%;
+    position: relative;
+    border-bottom: none;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .students-table tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-weight: 700;
+    color: #495057;
+    white-space: nowrap;
+  }
+
+  .students-table tbody td button {
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+}

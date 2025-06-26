@@ -1,0 +1,120 @@
+/* CSS Variables for easy theming */
+:root {
+  --sidebar-width: 240px;
+  --sidebar-bg: #1f2937;
+  --sidebar-color: #ffffff;
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.15);
+  --sidebar-active-bg: #3b82f6;
+  --sidebar-active-shadow: #3b82f6aa;
+  --focus-outline-color: #3b82f6;
+  --transition-duration: 0.3s;
+  --border-radius: 8px;
+  --padding-vertical: 2rem;
+  --padding-horizontal: 1rem;
+}
+
+/* Sidebar container */
+.admin-sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-color);
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: transform var(--transition-duration) ease;
+  z-index: 1000;
+  box-sizing: border-box;
+  /* Add subtle shadow for depth */
+  box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo */
+.admin-logo {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  user-select: none;
+  color: var(--sidebar-color);
+  text-transform: uppercase;
+  /* Add subtle text shadow for better readability */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation list */
+.admin-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav items */
+.admin-nav li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background var(--transition-duration), color var(--transition-duration);
+  user-select: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  /* Make focus visible for keyboard users */
+  outline-offset: 2px;
+}
+
+/* Hover and focus state */
+.admin-nav li:hover,
+.admin-nav li:focus-visible {
+  background-color: var(--sidebar-hover-bg);
+  color: #f0f0f0;
+  outline: none;
+}
+
+/* Active state - only one active at a time */
+.admin-nav li.active {
+  background-color: var(--sidebar-active-bg);
+  color: var(--sidebar-color);
+  font-weight: 600;
+  box-shadow: 0 0 8px var(--sidebar-active-shadow);
+}
+
+/* Accessibility: show focus ring */
+.admin-nav li:focus-visible {
+  outline: 2px solid var(--focus-outline-color);
+}
+
+/* Responsive sidebar - hidden by default on mobile */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    z-index: 1100;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-duration) ease;
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* Optional: Smooth scrollbar styling for better UX */
+.admin-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}

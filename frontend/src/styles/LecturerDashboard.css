@@ -1,0 +1,52 @@
+.lecturer-dashboard {
+  padding: 2rem;
+  background-color: black;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.lecturer-dashboard h2 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.lecturer-info {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.lecturer-info h3 {
+  margin-bottom: 0.8rem;
+  color: #374151;
+}
+
+.lecturer-info ul {
+  padding-left: 1.2rem;
+}
+
+.lecturer-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lecturer-info th, td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.lecturer-actions ul {
+  list-style-type: "📘 ";
+  padding-left: 1.5rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #6b7280;
+  margin-top: 0.8rem;
+}

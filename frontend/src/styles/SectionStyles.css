@@ -1,0 +1,30 @@
+.section-wrapper {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeInSection 0.4s ease-in-out;
+  color: #f0f0f0;
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.section-wrapper h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.section-wrapper p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+}

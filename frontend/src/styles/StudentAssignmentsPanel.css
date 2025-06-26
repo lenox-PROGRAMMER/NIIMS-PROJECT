@@ -1,0 +1,17 @@
+.student-assignments-panel {
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.04);
+}
+
+.student-assignments-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.student-assignments-panel li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #10b981;
+}

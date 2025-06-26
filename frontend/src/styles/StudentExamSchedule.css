@@ -1,0 +1,17 @@
+.student-exams-panel {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.student-exams-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.student-exams-panel li {
+  margin-bottom: 1rem;
+  border-left: 3px solid #2563eb;
+  padding-left: 1rem;
+}

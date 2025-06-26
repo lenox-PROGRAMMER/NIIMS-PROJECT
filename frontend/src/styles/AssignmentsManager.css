@@ -1,0 +1,36 @@
+.assignment-panel {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.assignment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.assignment-form input,
+.assignment-form textarea,
+.assignment-form select {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.assignment-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.assignment-form button {
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

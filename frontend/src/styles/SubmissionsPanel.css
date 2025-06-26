@@ -1,0 +1,37 @@
+/* SubmissionsPanel.css */
+
+/* Base wrapper styles inherited from .admin-panel-wrapper */
+
+/* Heading inside the panel */
+.panel-heading {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Paragraph/subtext inside the panel */
+.panel-subtext {
+  font-size: 1.1rem;
+  color: var(--text-medium);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+/* Future-proof: Add styling for lists or tables if needed */
+.submissions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submission-item {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.submission-item:last-child {
+  border-bottom: none;
+}
