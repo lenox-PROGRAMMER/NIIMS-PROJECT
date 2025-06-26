@@ -1,0 +1,4 @@
+# Ignore backend directory and sensitive files
+backend/
+.env
+
